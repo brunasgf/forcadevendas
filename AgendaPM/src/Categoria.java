@@ -1,5 +1,5 @@
 /**
- * Classe com as categorias de produtos fornecedias 
+ * Classe com as categorias de produtos fornecidas 
  * pelas empresas cadastradas no sistema
  */
 

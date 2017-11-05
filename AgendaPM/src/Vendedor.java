@@ -1,5 +1,5 @@
 /**
- * Classe Vendedor - Dados da pessoa que será representante de uma empresa cadastrada no sistema 
+ * Classe Vendedor - Dados da pessoa que será vendedor de uma empresa cadastrada no sistema 
  * e qual a empresa que ela representa. 
  */
 
@@ -10,7 +10,7 @@ public class Vendedor extends Pessoa{
 		private Empresa empresa;
 		
 		/**
-		 * Construtor classe Vendedor
+		 * Construtor da classe Vendedor
 		 * @param nome
 		 * @param nascimento
 		 * @param endereco

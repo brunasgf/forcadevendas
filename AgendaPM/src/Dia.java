@@ -78,8 +78,8 @@ public class Dia {
 			status = true;
 		}
 
-		// criar jOptionPane informando que ja existe um atendimento no mesmo
-		// horario quando status for false
+		// cria jOptionPane informando que já existe um atendimento no mesmo horario quando status for false
+		
 
 		return status;
 

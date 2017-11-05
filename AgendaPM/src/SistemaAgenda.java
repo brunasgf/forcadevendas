@@ -1,5 +1,4 @@
 
-
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -17,15 +16,11 @@ import javax.swing.JComboBox;
 
 import java.awt.Color;
 import java.awt.event.ActionListener;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.awt.event.ActionEvent;
 import net.miginfocom.swing.MigLayout;
 import java.awt.Label;
-import javax.swing.JFormattedTextField;
-import javax.swing.JSeparator;
 
 public class SistemaAgenda extends JFrame {
 
@@ -87,7 +82,7 @@ public class SistemaAgenda extends JFrame {
 	private JTextField dataFicha;
 
 	/**
-	 * Launch the application.
+	 * Execução da aplicação.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -103,7 +98,7 @@ public class SistemaAgenda extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Criação da janela.
 	 */
 	public SistemaAgenda() {
 		Singleton log = Singleton.getInstance();
@@ -480,8 +475,6 @@ public class SistemaAgenda extends JFrame {
 		btnCadastrarVendedor.setForeground(new Color(0, 0, 128));
 		btnCadastrarVendedor.setFont(new Font("Tahoma", Font.BOLD, 15));
 		cadastroVendedor.add(btnCadastrarVendedor, "cell 1 15,growx,aligny top");
-
-		// Ana
 
 		JPanel atendimento = new JPanel();
 		aba.addTab("Ficha Atendimento", null, atendimento, null);

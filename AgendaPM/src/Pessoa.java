@@ -1,5 +1,5 @@
 /**
- * Classe com dados comuns de uma pessoa
+ * Classe com dados em comum de uma pessoa
  */
 
 
@@ -32,14 +32,14 @@ public abstract class Pessoa {
 		return nome;
 	}
 	/**
-	 * Envoar nome da pessoa
+	 * Enviar nome da pessoa
 	 * @param nome
 	 */
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	/**
-	 * Pegar data de Nascimento da Pessoa
+	 * Pegar data de nascimento da Pessoa
 	 * @return Data de Nascimento
 	 */
 	public LocalDate getNascimento() {

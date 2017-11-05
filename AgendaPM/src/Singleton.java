@@ -13,7 +13,7 @@ public class Singleton {
 	}	
 	
 	/**
-	 * Método para retorna instância da classe 
+	 * Método para retornar instância da classe 
 	 * @return
 	 */
 
