@@ -1,4 +1,4 @@
-
+/** Adicionar na biblioteca o arquivo miglayout disponivel na pasta principalcaso apareça erro. */
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
