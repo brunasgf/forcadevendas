@@ -1,3 +1,4 @@
+
 /** Adicionar na biblioteca o arquivo miglayout disponivel na pasta principalcaso apareça erro. */
 import java.awt.EventQueue;
 import javax.swing.JFrame;
@@ -95,6 +96,7 @@ public class SistemaAgenda extends JFrame {
 				}
 			}
 		});
+
 	}
 
 	/**
@@ -210,6 +212,11 @@ public class SistemaAgenda extends JFrame {
 						cepEmp.setText(null);
 						cidadeEmp.setText(null);
 						estadoEmp.setText(null);
+						/**
+						 * monitora as empresas que estão sendo cadastradas no console
+						 */
+						System.out.println(
+								"Empresas cadastradas: \n " + "Nome:" + emp.getNome() + "\n CNPJ:" + emp.getCnpj());
 					}
 				} catch (NumberFormatException e1) {
 					JOptionPane.showMessageDialog(null, "Dados preenchidos com formato incorreto, tente novamente.",
@@ -321,6 +328,13 @@ public class SistemaAgenda extends JFrame {
 						empresa.cadastrarCliente(clienteEmpresa);
 						JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso !!! \n\n"
 								+ empresa.getCliente(cnpjCliente.getText()).toString());
+						/**
+						 * monitora os clientes que estão sendo cadastrados no console
+						 */
+
+						System.out.println("Cliente cadastrado: \n " + "Nome:" + clienteEmpresa.getNome() + "\n CNPJ:"
+								+ clienteEmpresa.getCnpj());
+
 						cnpjEmpresa.setText(null);
 						nomeCliente.setText(null);
 						cnpjCliente.setText(null);
@@ -405,6 +419,14 @@ public class SistemaAgenda extends JFrame {
 						empresaVendedor.cadastrarVendedor(vendedorEmpresa);
 						JOptionPane.showMessageDialog(null, "Vendedor cadastrado com sucesso !!! \n\n"
 								+ empresaVendedor.getVendedor(cpfVendedor.getText()).toString());
+
+						/**
+						 * monitora os vendedores que estão sendo cadastrados no console
+						 */
+
+						System.out.println(
+								"Vendedor cadastrado: \n " + empresaVendedor.getVendedor(cpfVendedor.getText()));
+
 						cnpjEmpVendedor.setText(null);
 						nomeVendedor.setText(null);
 						cpfVendedor.setText(null);
@@ -582,6 +604,13 @@ public class SistemaAgenda extends JFrame {
 									"Atendimento cadastrado com sucesso !!!\nEmpresa Responsável: "
 											+ empresaFicha.getNome() + " - " + empresaFicha.getCnpj()
 											+ atendimento.printAtendimento());
+
+							/**
+							 * monitora os atendimentos que estão sendo cadastrados no console
+							 */
+
+							System.out.println("Atendimento cadastrado: \n " + empresaFicha.getNome() + " - "
+									+ empresaFicha.getCnpj() + atendimento.printAtendimento());
 
 							cnpjEmpFicha.setText(null);
 							cpfVendedorFicha.setText(null);

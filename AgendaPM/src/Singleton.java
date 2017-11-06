@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -7,22 +6,24 @@ import java.util.List;
 public class Singleton {
 	private static final Singleton INSTANCE = new Singleton();
 	private static List<Empresa> grupoEmpresas;
-	
+
 	private Singleton() {
 		grupoEmpresas = new ArrayList<Empresa>();
-	}	
-	
+	}
+
 	/**
-	 * Método para retornar instância da classe 
+	 * Método para retornar instância da classe
+	 * 
 	 * @return
 	 */
 
 	public static Singleton getInstance() {
 		return INSTANCE;
 	}
-	
+
 	/**
 	 * Método para adicionar uma nova empresa para utilizar o sistema
+	 * 
 	 * @param empresa
 	 */
 	public void addEmpresa(Empresa empresa) {
@@ -30,8 +31,8 @@ public class Singleton {
 	}
 
 	/**
-	 * Método para buscar empresa cadastrada no sistema e retornar os dados dela
-	 * ou null se não tiver cadastrada
+	 * Método para buscar empresa cadastrada no sistema e retornar os dados dela ou
+	 * null se não tiver cadastrada
 	 * 
 	 * @param cnpj
 	 * @return Empresa

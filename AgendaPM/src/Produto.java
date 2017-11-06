@@ -2,7 +2,6 @@
  * Classe com dados dos produtos fornecidos pela empresa
  */
 
-
 public class Produto {
 	private String descricao;
 	private Categoria categoria;
@@ -58,6 +57,7 @@ public class Produto {
 
 	/**
 	 * Pegar valor do produto conforme sua categoria
+	 * 
 	 * @return Valor
 	 */
 	public Double getValor() {
@@ -80,7 +80,7 @@ public class Produto {
 		return preco;
 
 	}
-	
+
 	/**
 	 * Imprimir dados do produto
 	 */

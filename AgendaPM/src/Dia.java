@@ -3,7 +3,6 @@
  * com método para criar atendimento se já não tiver cadastrado um com os mesmos dados
  */
 
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -23,15 +22,19 @@ public class Dia {
 		setData(a, d);
 		setListaAtendimentos(new ArrayList<Atendimento>());
 	}
+
 	/**
-	 * Pegar data 
+	 * Pegar data
+	 * 
 	 * @return
 	 */
 	public LocalDate getData() {
 		return data;
 	}
+
 	/**
 	 * Enviar data
+	 * 
 	 * @param a
 	 * @param d
 	 */
@@ -39,24 +42,28 @@ public class Dia {
 	public void setData(int a, int d) {
 		this.data = LocalDate.ofYearDay(a, d);
 	}
-	
+
 	/**
 	 * Pegar Lista de atendimento
+	 * 
 	 * @return Lista de atendimentos
 	 */
 	public List<Atendimento> getListaAtendimentos() {
 		return listaAtendimentos;
 	}
+
 	/**
 	 * Enviar lista de atendimentos
+	 * 
 	 * @param listaAtendimentos
 	 */
 	public void setListaAtendimentos(List<Atendimento> listaAtendimentos) {
 		this.listaAtendimentos = listaAtendimentos;
 	}
-	
+
 	/**
-	 * Método para criar atendimento 
+	 * Método para criar atendimento
+	 * 
 	 * @param horas
 	 * @param minutos
 	 * @param vendedor
@@ -78,8 +85,8 @@ public class Dia {
 			status = true;
 		}
 
-		// cria jOptionPane informando que já existe um atendimento no mesmo horario quando status for false
-		
+		// cria jOptionPane informando que já existe um atendimento no mesmo horario
+		// quando status for false
 
 		return status;
 

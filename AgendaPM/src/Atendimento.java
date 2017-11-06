@@ -4,7 +4,6 @@
  * Possui método para imprimir os dados do atendimento
  */
 
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -24,7 +23,7 @@ public class Atendimento {
 	 * @param p
 	 */
 
-	Atendimento(LocalTime horario,LocalDate data, Vendedor v, Cliente c, Produto p) {
+	Atendimento(LocalTime horario, LocalDate data, Vendedor v, Cliente c, Produto p) {
 		setHorario(horario);
 		setVendedor(v);
 		setCliente(c);
@@ -49,17 +48,20 @@ public class Atendimento {
 	public void setHorario(LocalTime horario) {
 		this.horario = horario;
 	}
-	
+
 	/**
 	 * Pegar data do atendimento
+	 * 
 	 * @return data
 	 */
 
 	public LocalDate getData() {
 		return data;
 	}
+
 	/**
 	 * Enviar data atendimento
+	 * 
 	 * @param data
 	 */
 	public void setData(LocalDate data) {
@@ -102,25 +104,31 @@ public class Atendimento {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+
 	/**
 	 * Pegar produto do atendimento
+	 * 
 	 * @return produto
 	 */
 	public Produto getProduto() {
 		return produto;
 	}
+
 	/**
 	 * Enviar produto do atendimento
+	 * 
 	 * @param produto
 	 */
 	public void setProduto(Produto produto) {
 		this.produto = produto;
 	}
+
 	/**
 	 * Imprimir dados do atendimento
+	 * 
 	 * @return dados atendimento
 	 */
-	
+
 	public String printAtendimento() {
 		String atd = "";
 		atd = "Dados ficha de atendimento: " + "\n" + "Vendedor Responsável: " + getVendedor().getNome() + "\n"

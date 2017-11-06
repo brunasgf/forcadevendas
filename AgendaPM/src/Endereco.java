@@ -1,7 +1,6 @@
 
-
 /**
- * Classe com dados de um endereço 
+ * Classe com dados de um endereço
  *
  */
 
